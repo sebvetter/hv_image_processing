@@ -7,6 +7,9 @@ import cv2
 import pickle
 from image_handler import Picture
 
+
+PATH_TO_RUNDATA = os.path.join('C:\\Users', 'tm3408', 'Desktop', 'phd', 'workspace',  'hv_image_processing', 'run_data')
+
 class Run:
     def __init__(self, hv_data_file: str) -> None:
         self.campaign = None
@@ -51,7 +54,7 @@ class Run:
     def load_image_data(self):
         if self.run_id is None:
             raise ValueError("No run ID set for this run.")
-        dict_file = f'./run_data/{self.run_id}.pkl'
+        dict_file = os.path.join(PATH_TO_RUNDATA, f'{self.run_id}.pkl')
         if not os.path.exists(dict_file):
             print(f"No image data dict to load for {self.run_id}. Try run.calc_imagedata().")
             return False
@@ -75,7 +78,7 @@ class Run:
             self.image_data['cluster_positions'].append(pic.cluster_positions)
 
         if self.run_id is not None:
-            dict_file = f'./run_data/{self.run_id}.pkl'
+            dict_file = os.path.join(PATH_TO_RUNDATA, f'{self.run_id}.pkl')
             with open(dict_file, 'wb') as f:
                 pickle.dump(self.image_data, f)
         return
