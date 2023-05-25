@@ -1,4 +1,4 @@
-cache/
+cache/*
 modules/__pycache__/
-run_data/
+run_data/*
 plots/
