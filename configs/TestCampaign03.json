@@ -1,0 +1,8 @@
+{
+    "id": "TestCampaign03",
+    "date": "2023-05-05",
+    "image_path": "Y:\\Cathode\\LocalHVTest\\SpareMesh_3_230505\\NIKON",
+    "image_subdirs": ["Run1", "Run2", "Run3", "Run4", "Run5"],
+    "bright_images": ["DSC_2461.JPG", "DSC_2461.JPG", "DSC_2461.JPG", "DSC_2461.JPG", "DSC_2461.JPG"],
+    "hv_path": "Y:\\Cathode\\LocalHVTest\\SpareMesh_3_230505\\hv_output_data"
+}

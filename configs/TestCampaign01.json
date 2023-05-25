@@ -1,0 +1,8 @@
+{
+    "id": "TestCampaign01",
+    "date": "2023-04-24",
+    "image_path": "Y:\\Cathode\\LocalHVTest\\SpareMesh\\spareMesh_NIKON",
+    "image_subdirs": ["Test1", "Test2", "Test3", "Test4"],
+    "bright_images": ["DSC_1954_positionCalibration.JPG"],
+    "hv_path": "Y:\\Cathode\\LocalHVTest\\SpareMesh\\hv_output_data"
+}
